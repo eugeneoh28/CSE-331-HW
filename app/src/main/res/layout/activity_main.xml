@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     tools:context="eo28.cse331_17aucampuspaths.MainActivity">
 
-    <ImageView
+    <eo28.cse331_17aucampuspaths.DrawView
         android:id="@+id/imageView"
         android:layout_width="386dp"
         android:layout_height="259dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +22,7 @@
         app:srcCompat="@drawable/campus_map_android" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -33,4 +32,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/Buildings"
+        android:layout_width="136dp"
+        android:layout_height="72dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <ListView
+        android:layout_width="162dp"
+        android:layout_height="72dp"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="306dp" />
 </android.support.constraint.ConstraintLayout>
